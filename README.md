@@ -90,7 +90,8 @@ Follow their guides to update your DNS settings with your domain registrar.
 ```
 personal-website/
 ├── index.html      # Main HTML file
-├── styles.css      # Styling
+├── styles.css      # Styling (design tokens + layout)
+├── reveal.js       # Reveal-on-scroll behavior
 └── README.md       # This file
 ```
 

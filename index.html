@@ -3,215 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eunice Guo - Personal Website</title>
+    <title>Eunice Guo — Investing &amp; AI</title>
+    <meta name="description" content="Eunice Guo — ex–investment banking and an NYU Stern undergrad, building at the intersection of finance and AI.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Header Section -->
-        <header>
-            <h1>Eunice Guo</h1>
-            <p class="tagline">Finance Professional | AI Learner | Tech Explorer</p>
+    <div class="page">
+        <!-- Header -->
+        <header class="site-header" data-reveal>
+            <span class="wordmark">Eunice&nbsp;Guo</span>
+            <nav class="site-nav">
+                <a href="#work">Work</a>
+                <a href="#more">More</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </header>
 
-        <!-- Bio Section -->
-        <section class="bio">
-            <h2>About Me</h2>
-            <p>
-                Hi, I'm Eunice Guo! I'm a finance professional and recent NYU Stern graduate currently exploring the exciting intersection of finance and technology.
-            </p>
-            <p>
-                As someone who's just starting to learn about AI, I'm fascinated by the potential of Fintech AI and AI trading tools. I'm on a journey to understand how these technologies are reshaping the financial landscape—and I want to share every step of this learning process with you.
-            </p>
-            <p>
-                Whether you're also trying to keep up in this rapidly evolving space or just curious about where finance and tech collide, let's learn together!
-            </p>
+        <!-- Hero -->
+        <section class="hero">
+            <h1 class="hero-title" data-reveal>Building at the edge of investing and AI.</h1>
+            <p class="hero-intro" data-reveal>I'm Eunice Guo — ex–investment banking and an <em>NYU Stern</em> undergrad, now building at the intersection of finance and AI. I make tools for my own productivity and for retail investors, and spend my time on investing and learning AI infrastructure and world models. A few things I've built are below.</p>
+            <div class="hero-links" data-reveal>
+                <a class="link-accent" href="mailto:eg.eunice.guo@gmail.com">Email</a>
+                <a class="link-plain" href="https://www.linkedin.com/in/eunice-yuke-guo/">LinkedIn</a>
+                <a class="link-plain" href="https://github.com/eunice-guo">GitHub</a>
+            </div>
         </section>
 
-        <!-- Projects Section -->
-        <section class="projects">
-            <h2>Projects I'm Exploring</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>破壁 · GlobalInfo</h3>
-                        <div class="project-links">
-                            <a href="https://pobi-globalinfo.vercel.app/" target="_blank" class="project-link-btn">
-                                <span class="icon">🌐</span>
-                                <span class="link-text">Live Demo</span>
-                            </a>
-                        </div>
-                    </div>
-                    <p>One home for scattered, high-signal information. The sharpest investment insights and the most important frontier AI research—world models and beyond—are spread thin across X, Substack, arXiv, earnings calls, and podcasts, and no one can track it all. 破壁 ("break the wall") curates these sources into one organized daily digest, with faithful Chinese translation and summaries so you can scan it fast. Built to keep you informed without the noise—never investment advice.</p>
+        <!-- Selected Work -->
+        <section id="work" class="work">
+            <div class="section-head" data-reveal>
+                <span class="section-label">Selected Work</span>
+                <span class="section-count">03</span>
+            </div>
+
+            <a class="project-row" data-reveal data-row href="https://pobi-globalinfo.vercel.app/">
+                <span class="project-index">01</span>
+                <div class="project-body">
+                    <h3 class="project-title">破壁 · GlobalInfo</h3>
+                    <p class="project-desc">One home for scattered, high-signal information on investing and world models — curated into one daily digest with faithful Chinese translation.</p>
+                </div>
+                <div class="project-meta">
                     <div class="project-tags">
                         <span class="tag">Curation</span>
                         <span class="tag">AI Research</span>
-                        <span class="tag">Investing</span>
                         <span class="tag">Next.js</span>
                     </div>
+                    <span class="project-view">View ↗</span>
                 </div>
+            </a>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Simple Research · 投研平权</h3>
-                        <div class="project-links">
-                            <a href="https://simple-research-beta.vercel.app/" target="_blank" class="project-link-btn">
-                                <span class="icon">📊</span>
-                                <span class="link-text">Live Demo</span>
-                            </a>
-                        </div>
-                    </div>
-                    <p>Equity research, made readable. In-depth reports and filings are dense and slow to get through—right when attention spans are shorter than ever. Enter a US stock ticker and Simple Research distills a company's latest primary materials into something digestible: investor and earnings presentations, call transcripts, and official SEC filings (8-K / 10-Q / 10-K). Everything is anchored on SEC EDGAR and cross-checked against each reporting period, so nothing is fabricated. 投研平权—serious research, made accessible to everyone.</p>
+            <a class="project-row" data-reveal data-row href="https://simple-research-beta.vercel.app/">
+                <span class="project-index">02</span>
+                <div class="project-body">
+                    <h3 class="project-title">Simple Research · 投研平权</h3>
+                    <p class="project-desc">Gamifying investment research. Enter a US ticker and a company's filings, transcripts and presentations become readable, engaging, and easy to explore — all anchored on SEC EDGAR, so nothing is fabricated.</p>
+                </div>
+                <div class="project-meta">
                     <div class="project-tags">
-                        <span class="tag">Next.js</span>
-                        <span class="tag">AI</span>
                         <span class="tag">SEC EDGAR</span>
                         <span class="tag">Equity Research</span>
+                        <span class="tag">AI</span>
                     </div>
+                    <span class="project-view">View ↗</span>
                 </div>
+            </a>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>CourtPing</h3>
-                        <div class="project-links">
-                            <a href="https://courtping-ruddy.vercel.app/" target="_blank" class="project-link-btn">
-                                <span class="icon">🎾</span>
-                                <span class="link-text">Live Demo</span>
-                            </a>
-                        </div>
-                    </div>
-                    <p>Mobile-first tennis court check-in for Murray Park, Long Island City. Auto check-in via browser geolocation, anonymous realtime availability so you can see how busy the courts are before heading over, Instagram-style session feed, and streak tracking. Built with Next.js 16, Supabase realtime, and Leaflet — all on free tiers.</p>
-                    <div class="project-tags">
-                        <span class="tag">Next.js</span>
-                        <span class="tag">Supabase</span>
-                        <span class="tag">Realtime</span>
-                        <span class="tag">Tennis</span>
-                    </div>
+            <a class="project-row project-row--last" data-reveal data-row href="https://love-clarity.vercel.app/">
+                <span class="project-index">03</span>
+                <div class="project-body">
+                    <h3 class="project-title">Love Clarity</h3>
+                    <p class="project-desc">A thoughtful companion for relationship reflection — turning messy emotions into honest, usable insight about how you feel and what you actually want.</p>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Love Clarity</h3>
-                        <div class="project-links">
-                            <a href="https://love-clarity.vercel.app/" target="_blank" class="project-link-btn">
-                                <span class="icon">💗</span>
-                                <span class="link-text">Live Demo</span>
-                            </a>
-                        </div>
-                    </div>
-                    <p>A thoughtful companion for relationship reflection — get clarity on how you feel, what you want, and what's actually going on. Designed to turn messy emotions into honest, usable insight.</p>
+                <div class="project-meta">
                     <div class="project-tags">
                         <span class="tag">AI</span>
-                        <span class="tag">Relationships</span>
                         <span class="tag">Reflection</span>
                         <span class="tag">Next.js</span>
                     </div>
+                    <span class="project-view">View ↗</span>
                 </div>
+            </a>
+        </section>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Praise Button</h3>
-                        <div class="project-links">
-                            <a href="https://eunice-guo.github.io/praise-button/" target="_blank" class="project-link-btn">
-                                <span class="icon">🎨</span>
-                                <span class="link-text">Live Demo</span>
-                            </a>
-                            <a href="https://github.com/eunice-guo/praise-button" target="_blank" class="project-link-btn">
-                                <span class="icon">💻</span>
-                                <span class="link-text">GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                    <p>A simple, encouraging web button with beautiful glassmorphism design, sound effects, and haptic feedback. Click the button to receive instant encouragement! Features warm gradient backgrounds, glow animations, and mobile vibration support. Built with vanilla HTML, CSS, and JavaScript—no frameworks needed.</p>
-                    <div class="project-tags">
-                        <span class="tag">Web Design</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">Interactive</span>
-                        <span class="tag">Self-Care</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>FreshTrack - Smart Food Tracker</h3>
-                        <div class="project-links">
-                            <a href="https://github.com/eunice-guo/FreshTrack" target="_blank" class="project-link-btn">
-                                <span class="icon">💻</span>
-                                <span class="link-text">GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                    <p>A smart food inventory management app to reduce waste. Track expiration dates, get timely reminders, discover recipes based on available ingredients, and manage shopping lists intelligently. Features receipt scanning via OCR, web interface, and smart recipe recommendations. Currently in development with exciting features coming soon!</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">FastAPI</span>
-                        <span class="tag">OCR</span>
-                        <span class="tag">In Progress</span>
-                    </div>
-                </div>
-
-<div class="project-card">
-                    <div class="project-header">
-                        <h3>Fintech AI Newsletter</h3>
-                        <div class="project-links">
-                            <a href="https://eueu268609.substack.com/" target="_blank" class="project-link-btn">
-                                <span class="icon">📰</span>
-                                <span class="link-text">Substack</span>
-                            </a>
-                            <a href="https://github.com/eunice-guo/fintech-ai-news" target="_blank" class="project-link-btn">
-                                <span class="icon">💻</span>
-                                <span class="link-text">GitHub</span>
-                            </a>
-                        </div>
-                    </div>
-                    <p>This is my first exploration into combining content creation with technology! I research and curate insights on AI developments in finance, sharing my findings through Substack. I'm also learning to use GitHub to fetch and organize AI news using code—it's my hands-on way of understanding how these tools work while sharing what I discover.</p>
-                    <div class="project-tags">
-                        <span class="tag">Fintech</span>
-                        <span class="tag">AI</span>
-                        <span class="tag">Newsletter</span>
-                        <span class="tag">Learning</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>AI Trading Tools Research</h3>
-                    <p>Exploring various AI-powered trading tools and platforms to understand their capabilities, limitations, and potential impact on modern trading strategies. This is how I learn—by diving in and testing things myself.</p>
-                    <div class="project-tags">
-                        <span class="tag">AI Trading</span>
-                        <span class="tag">Research</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Life & Learning on Xiaohongshu</h3>
-                    <p>Beyond finance and tech, I share restaurant recommendations, lifestyle content, and key learning takeaways from my journey in the tech and finance space.</p>
-                    <div class="project-tags">
-                        <span class="tag">Lifestyle</span>
-                        <span class="tag">Content Creator</span>
-                    </div>
-                </div>
+        <!-- Also Building & Writing -->
+        <section id="more" class="more">
+            <div class="more-label" data-reveal>Also building &amp; writing</div>
+            <div class="more-grid" data-reveal>
+                <div class="more-item"><span class="more-name">Praise Button</span><span class="more-meta">Glassmorphism · JS</span></div>
+                <div class="more-item"><span class="more-name">CourtPing</span><span class="more-meta">Supabase · Realtime</span></div>
+                <div class="more-item"><span class="more-name">FreshTrack</span><span class="more-meta">FastAPI · OCR</span></div>
+                <div class="more-item"><span class="more-name">Fintech AI Newsletter</span><span class="more-meta">Substack</span></div>
+                <div class="more-item more-item--last"><span class="more-name">AI Trading Tools Research</span><span class="more-meta">Research</span></div>
+                <div class="more-item more-item--last"><span class="more-name">Life &amp; Learning · Xiaohongshu</span><span class="more-meta">Content</span></div>
             </div>
         </section>
 
-        <!-- Contact Section -->
-        <section class="contact">
-            <h2>Get In Touch</h2>
-            <p>I'd love to connect with fellow learners and finance + tech enthusiasts!</p>
-            <div class="contact-links-inline">
-                <a href="mailto:eg.eunice.guo@gmail.com">Email</a>
-                <span class="separator">•</span>
-                <a href="https://www.linkedin.com/in/eunice-yuke-guo/" target="_blank">LinkedIn</a>
-                <span class="separator">•</span>
-                <a href="https://github.com/eunice-guo" target="_blank">GitHub</a>
-                <span class="separator">•</span>
-                <a href="https://www.xiaohongshu.com/user/profile/5ca724ab000000001000ed17" target="_blank">Xiaohongshu</a>
+        <!-- Contact -->
+        <section id="contact" class="contact" data-reveal>
+            <h2 class="contact-title">Let's build together.</h2>
+            <p class="contact-intro">For fellow finance + tech enthusiasts, builders, and anyone curious where the two collide.</p>
+            <div class="contact-links">
+                <a href="mailto:eg.eunice.guo@gmail.com">eg.eunice.guo@gmail.com</a>
+                <a href="https://www.linkedin.com/in/eunice-yuke-guo/">LinkedIn</a>
+                <a href="https://github.com/eunice-guo">GitHub</a>
+                <a href="https://www.xiaohongshu.com/user/profile/5ca724ab000000001000ed17">小红书</a>
             </div>
+            <div class="footer-line">© 2026 Eunice Guo — built with curiosity.</div>
         </section>
-
-        <!-- Footer -->
-        <footer>
-            <p>&copy; 2025 Eunice Guo. Built with HTML, CSS, and curiosity.</p>
-        </footer>
     </div>
+
+    <script src="reveal.js"></script>
 </body>
 </html>
